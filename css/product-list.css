@@ -1,0 +1,147 @@
+body {
+    background-color: slategray;
+    --rating: 60%
+}
+
+.product-grid__products-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .product-grid__products-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.product-list-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-list-item__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list-item__badge {
+    margin: 5px;
+    background-color: #03a9f5;
+    color: white;
+    align-self: flex-start;
+}
+
+.product-list-item__image {}
+
+.product-list-item__category {
+    order: 1;
+    text-align: center;
+    color: #c2c2c2;
+}
+
+.product-list-item__rating {
+    order: 2;
+    text-align: center;
+}
+
+.product-list-item__name {
+    order: 3;
+    text-align: center;
+}
+
+.product-list-item__price {
+    order: 4;
+    font-size: larger;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.product-list-item__add-to-cart-section {
+    order: 0;
+    text-align: center;
+    background-color: #c2c2c2;
+    visibility: hidden;
+}
+
+
+.product-list-item:hover .product-list-item__add-to-cart-section {
+    order: 5;
+    visibility: visible;
+}
+
+
+.product-list-item__add-to-cart-button {
+    display: inline-block;
+    background-color: #00a7f5;
+    color: white;
+    margin: 10px auto;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+
+.product-list-item__add-to-cart-button:hover {
+    background-color: #0078af;
+}
+
+.rating {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.product-list-item__rating::before {
+    content: '\f005\f005\f005\f005\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background: -webkit-linear-gradient(180deg, white 0% var(--rating), gold var(--rating) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-list-item:hover .product-list-item__actions {
+    display: block;
+}
+
+.product-list-item__actions {
+    display: none;
+    position: relative;
+}
+
+.product-list-item__action {
+    position: absolute;
+    background-color: #efefef8f;
+    border-radius: 50%;
+    padding: 10px;
+    left: 75%;
+}
+
+
+.product-list-item__action:hover {
+    background-color: #efefef;
+}
+
+.product-list-item__action--active {
+    background-color: #efefef;
+}
+
+.product-list-item__action--active:hover {
+    background-color: #efefef;
+}
+
+.product-list-item__actions-compare {
+    top: 0px;
+}
+
+.product-list-item__actions-details {
+    top: 50px;
+}
+
+.product-list-item__actions-wishlist {
+    top: 100px;
+}
