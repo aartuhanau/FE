@@ -1,263 +1,353 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" type="text/css" href="css/product-list.css">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/product-list.css" />
     <script src="js/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/dff746dc51.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/dff746dc51.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="product-grid">
-        <div class="product-grid__menu">
-            <div class="product-grid__menu-item product-grid__menu-item--all">All</div>
-            <div class="product-grid__menu-item product-grid__menu-item--favorites">Favorites</div>
-            <div class="product-grid__menu-item product-grid__menu-item--compare">Compare</div>
-            <label for="hidden" class="product-grid__menu-item-selector">
-                Show hidden
-            </label>
-            <input class="product-grid__menu-item-selector product-grid__menu-item--show-hidden" id="hidden"
-                type="checkbox">
-
+      <div class="product-grid__menu">
+        <div class="product-grid__menu-item product-grid__menu-item--all">
+          All
         </div>
-        <div class="product-grid__products-list">
-            <div class="product-list-item" id="1">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="2">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="3">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="4">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="5">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="6">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="7">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="8">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="9">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-list-item" id="10">
-                <span class="product-list-item__badge">New</span>
-                <div class="product-list-item__actions">
-                    <div class="product-list-item__action product-list-item__action--hidden"><i
-                            class="fa-regular fa-eye"></i></div>
-                    <div class="product-list-item__action product-list-item__action--compare"><i
-                            class="fa-solid fa-scale-balanced"></i></div>
-                    <div class="product-list-item__action product-list-item__action--favorite"><i
-                            class="fa-regular fa-heart"></i></div>
-                </div>
-                <img class="product-list-item__image" src="images/yanko_page.jpg">
-
-                <div class="product-list-item__info">
-                    <div class="product-list-item__category">T-SHIRTS</div>
-                    <div class="product-list-item__rating">
-                    </div>
-                    <div class="product-list-item__name">Product</div>
-                    <div class="product-list-item__price">12$</div>
-                    <div class="product-list-item__add-to-cart">
-                        <div class="product-list-item__cart-button">Add to cart</div>
-                    </div>
-                </div>
-            </div>
+        <div class="product-grid__menu-item product-grid__menu-item--favorites">
+          Favorites
         </div>
+        <div class="product-grid__menu-item product-grid__menu-item--compare">
+          Compare
+        </div>
+        <label for="hidden" class="product-grid__menu-item-selector">
+          Show hidden
+        </label>
+        <input
+          class="product-grid__menu-item-selector product-grid__menu-item--show-hidden"
+          id="hidden"
+          type="checkbox"
+        />
+      </div>
+      <div class="product-grid__products-list">
+        <div class="product-list-item" id="1">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="2">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="3">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="4">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="5">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="6">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="7">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="8">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="9">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-item" id="10">
+          <span class="product-list-item__badge">New</span>
+          <div class="product-list-item__actions">
+            <div
+              class="product-list-item__action product-list-item__action--hidden"
+            >
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--compare"
+            >
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div
+              class="product-list-item__action product-list-item__action--favorite"
+            >
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <img class="product-list-item__image" src="images/yanko_page.jpg" />
+
+          <div class="product-list-item__info">
+            <div class="product-list-item__category">T-SHIRTS</div>
+            <div class="product-list-item__rating"></div>
+            <div class="product-list-item__name">Product</div>
+            <div class="product-list-item__price">12$</div>
+            <div class="product-list-item__add-to-cart">
+              <div class="product-list-item__cart-button">Add to cart</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
