@@ -33,6 +33,7 @@ const CLASSES = {
   MENU_ITEM_ACTIVE: "product-grid__menu-item--active",
   MENU_SELECTOR: "product-grid__menu-item-selector",
   LIST_ITEM_HIDDEN: "product-list-item--hide",
+  LIST_ITEM_TRANSPARENT: "product-list-item--transparent",
   LIST_ITEM: "product-list-item",
 };
 
@@ -41,7 +42,7 @@ const ACTION_SET = new Set([
   CLASSES.MENU_COMPARE,
   CLASSES.MENU_FAVORITES,
 ]);
-var isHiddenListItemVisible = false;
+let isHiddenListItemVisible = document.getElementById("hidden").checked;
 
 window.addEventListener("DOMContentLoaded", (event) => {
   initializeActionButtons();
@@ -75,23 +76,24 @@ function activeButton(listItem, action) {
     }
   });
 
-  if (
-    action.classList.contains(CLASSES.ACTION_HIDDEN) &&
-    !isHiddenListItemVisible
-  ) {
-    action
-      .closest(`.${CLASSES.LIST_ITEM}`)
-      .classList.add(CLASSES.LIST_ITEM_HIDDEN);
+  if (action.classList.contains(CLASSES.ACTION_HIDDEN)) {
+    listItem.classList.add(CLASSES.LIST_ITEM_TRANSPARENT);
+    if (!isHiddenListItemVisible) {
+      listItem.classList.add(CLASSES.LIST_ITEM_HIDDEN);
+    }
   }
 }
 
-function deactivateButton(tile, action) {
+function deactivateButton(listItem, action) {
   action.classList.remove(CLASSES.ACTION_ACTIVE);
   SET_TO_LIST_ITEM_TAG.forEach((value, key) => {
     if (action.classList.contains(value)) {
-      key.delete(tile.getAttribute(ID));
+      key.delete(listItem.getAttribute(ID));
     }
   });
+  if (action.classList.contains(CLASSES.ACTION_HIDDEN)) {
+    listItem.classList.remove(CLASSES.LIST_ITEM_TRANSPARENT);
+  }
 }
 
 function saveSets() {
@@ -196,6 +198,9 @@ function updateListItem(listItem) {
   SET_TO_LIST_ITEM_TAG.forEach((value, key) => {
     if (key.has(id)) {
       listItem.querySelector(`.${value}`).classList.add(CLASSES.ACTION_ACTIVE);
+      if (value === CLASSES.ACTION_HIDDEN) {
+        listItem.classList.add(CLASSES.LIST_ITEM_TRANSPARENT);
+      }
     }
   });
   changeListItemVisibility(() => false, listItem);

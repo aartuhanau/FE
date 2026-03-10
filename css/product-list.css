@@ -1,7 +1,7 @@
 body {
   background-color: #f4e4bc;
   margin: 0;
-  --rating: 70%;
+  --rating: 3.4;
 }
 
 .product-grid__products-list {
@@ -101,8 +101,8 @@ body {
   font-weight: 900;
   background: -webkit-linear-gradient(
     180deg,
-    white 0% var(--rating),
-    gold var(--rating) 100%
+    white 0% calc(100% - 20 * var(--rating) * 1%),
+    gold calc(100% - 20 * var(--rating) * 1%) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -154,6 +154,10 @@ body {
   display: none;
 }
 
+.product-list-item--transparent {
+  opacity: 50%;
+}
+
 .product-grid__menu {
   background-color: #c94a2b;
   margin-bottom: 10px;
@@ -171,10 +175,6 @@ body {
 
   .product-list-item {
     font-size: 40px;
-  }
-
-  .product-list-item__image {
-    width: 400px;
   }
 
   .product-list-item__action--compare {
@@ -195,6 +195,7 @@ body {
 }
 
 .product-grid__menu-item {
+  align-content: center;
   padding: 20px;
 }
 
