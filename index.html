@@ -1,396 +1,399 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/product-list.css" />
-    <script src="js/script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/dff746dc51.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/assets/css/product-list.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="src/assets/js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/dff746dc51.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="product-grid">
       <div class="product-grid__menu">
-        <div class="product-grid__menu-item product-grid__menu-item--all">
-          All
+        <div class="product-grid__menu-list">
+          <div class="product-grid__menu-item product-grid__menu-item--all product-grid__menu-item--active">
+            All
+          </div>
+          <div
+            class="product-grid__menu-item product-grid__menu-item--favorites"
+          >
+            Favorites
+          </div>
+          <div class="product-grid__menu-item product-grid__menu-item--compare">
+            Compare
+          </div>
         </div>
-        <div class="product-grid__menu-item product-grid__menu-item--favorites">
-          Favorites
+        <div class="product-grid__menu-selector">
+          <label for="hidden" class="product-grid__menu-item-selector">
+            Show hidden
+          </label>
+          <input
+            class="product-grid__menu-item-selector product-grid__menu-item--show-hidden"
+            id="hidden"
+            type="checkbox"
+          />
         </div>
-        <div class="product-grid__menu-item product-grid__menu-item--compare">
-          Compare
-        </div>
-        <label for="hidden" class="product-grid__menu-item-selector">
-          Show hidden
-        </label>
-        <input
-          class="product-grid__menu-item-selector product-grid__menu-item--show-hidden"
-          id="hidden"
-          type="checkbox"
-        />
       </div>
-      <div class="product-grid__products-list">
-        <div class="product-list-item" id="1" style="--rating: 4.2">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+      <div class="product-grid__content">
+        <div class="product-grid__products-list">
+          <div class="product-list-item" id="1" style="--rating: 4.2">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/1.jpg"
-            height="250"
-            width="200"
-          />
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/1.jpg"
+              alt="Yanko King of the Albanians"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="2" style="--rating: 4.5">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="2" style="--rating: 4.5">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/2.jpg"
-            height="250"
-            width="200"
-          />
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
-            </div>
-          </div>
-        </div>
-        <div class="product-list-item" id="3" style="--rating: 5">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/2.jpg"
+              alt="Christ Has Risen"
+            />
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-          <img
-            class="product-list-item__image"
-            src="images/3.jpg"
-            height="250"
-            width="200"
-          />
+          <div class="product-list-item" id="3" style="--rating: 5">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/3.jpg"
+              alt="The Twelve"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="4">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="4">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/4.jpg"
-            height="250"
-            width="200"
-          />
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/4.jpg"
+              alt="The Fiery Angel: A Sixteenth Century Romance"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="5" style="--rating: 3.6">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="5" style="--rating: 3.6">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/5.jpg"
-            height="250"
-            width="200"
-          />
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/5.jpg"
+              alt="A Cloud in Trousers"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="6" style="--rating: 2.3">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="6" style="--rating: 2.3">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/6.jpg"
-            height="250"
-            width="200"
-          />
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/6.jpg"
+              alt="Disintegration of the Atom"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="7" style="--rating: 4.7">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="7" style="--rating: 4.7">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/7.jpg"
-            height="250"
-            width="200"
-          />
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/7.jpg"
+              alt="Zangezi"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="8" style="--rating: 3.5">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="8" style="--rating: 3.5">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/8.png"
-            height="250"
-            width="200"
-          />
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
-            </div>
-          </div>
-        </div>
-        <div class="product-list-item" id="9" style="--rating: 3.73">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/8.png"
+              alt="Tango with cows"
+            />
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-          <img
-            class="product-list-item__image"
-            src="images/9.jpg"
-            height="250"
-            width="200"
-          />
-          <div class="product-list-item__info">
-            <div class="product-list-item__category">Books</div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+          <div class="product-list-item" id="9" style="--rating: 3.73">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/9.jpg"
+              alt="Novel with Cocaine"
+            />
+            <div class="product-list-item__info">
+              <div class="product-list-item__category">Books</div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="product-list-item" id="10" style="--rating: 3.13">
-          <span class="product-list-item__badge">New</span>
-          <div class="product-list-item__actions">
-            <div
-              class="product-list-item__action product-list-item__action--hidden"
-            >
-              <i class="fa-regular fa-eye"></i>
+          <div class="product-list-item" id="10" style="--rating: 3.13">
+            <span class="product-list-item__badge">New</span>
+            <div class="product-list-item__actions">
+              <div
+                class="product-list-item__action product-list-item__action--hidden"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--compare"
+              >
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div
+                class="product-list-item__action product-list-item__action--favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </div>
             </div>
-            <div
-              class="product-list-item__action product-list-item__action--compare"
-            >
-              <i class="fa-solid fa-scale-balanced"></i>
-            </div>
-            <div
-              class="product-list-item__action product-list-item__action--favorite"
-            >
-              <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <img
-            class="product-list-item__image"
-            src="images/1.jpg"
-            height="250"
-            width="200"
-          />
+            <img
+              class="product-list-item__image"
+              src="src/assets/images/1.jpg"
+              alt="Yanko King of the Albanians"
+            />
 
-          <div class="product-list-item__info">
-            <div class="product-list-item__category"></div>
-            <div class="product-list-item__rating"></div>
-            <div class="product-list-item__name">Product</div>
-            <div class="product-list-item__price">12$</div>
-            <div class="product-list-item__add-to-cart">
-              <div class="product-list-item__cart-button">Add to cart</div>
+            <div class="product-list-item__info">
+              <div class="product-list-item__category"></div>
+              <div class="product-list-item__rating"></div>
+              <div class="product-list-item__name">Product</div>
+              <div class="product-list-item__price">12$</div>
+              <div class="product-list-item__add-to-cart">
+                <div class="product-list-item__cart-button">Add to cart</div>
+              </div>
             </div>
           </div>
         </div>
